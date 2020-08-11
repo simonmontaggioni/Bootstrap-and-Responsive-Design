@@ -4,11 +4,12 @@
   "description": "Small project to learn about bootstrap 4 and RWD",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
   },
   "author": "simon.montaggioni@gmail.com",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "lite-server": "^2.5.4"
   }
