@@ -87,8 +87,13 @@
           </div>
           <div class="col-12 mt-3 col-sm-3 align-self-center">
             <a
-              href="./index.html#reserve-table"
-              class="btn btn-block btn-sm btn-warning"
+              role="button"
+              class="btn btn-block btn-sm btn-warning nav-link"
+              data-toggle="tooltip"
+              data-html="true"
+              title="Or Call us at <br><strong>+852 12345678</strong>"
+              data-placement="bottom"
+              href="./index.html#reserveForm"
             >
               Reserve Table
             </a>
@@ -380,5 +385,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
