@@ -73,3 +73,10 @@ body {
 .carousel .carousel-caption {
   text-shadow: 2px 2px 10px #0f0f0f;
 }
+
+#carouselButtons {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
