@@ -2,6 +2,7 @@ $lt-gray: #ddd;
 $background-dark: #512da8;
 $background-light: #9575cd;
 $background-pale: #d1c4e9;
+$color-floral: floralwhite;
 
 // Height variables
 $carousel-item-height: 300px;
@@ -69,12 +70,12 @@ body {
 
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     background-position: center;
     background-size: 20px;
     background-color: #00000086;
-    border-radius: 50px;
+    border-radius: 50%;
   }
 
   .carousel-caption {
@@ -87,4 +88,21 @@ body {
   right: 0px;
   bottom: 0px;
   z-index: 1;
+}
+
+.modal {
+  .modal-header {
+    background-color: $background-dark;
+
+    .modal-title {
+      color: $color-floral;
+    }
+    button {
+      color: $color-floral;
+    }
+  }
+
+  .modal-body {
+    background-color: $background-pale;
+  }
 }
