@@ -69,9 +69,7 @@
             </li>
           </ul>
           <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginModal">
-              <span class="fa fa-sign-in"></span> Login</a
-            >
+            <a id="loginButton"> <span class="fa fa-sign-in"></span> Login</a>
           </span>
         </div>
       </div>
@@ -299,10 +297,9 @@
           </div>
           <div class="col-12 mt-3 col-sm-3 align-self-center">
             <a
+              id="reservationButton"
               role="button"
               class="btn btn-block btn-sm btn-warning nav-link"
-              data-toggle="modal"
-              data-target="#reservationModal"
               href="#"
             >
               Reserve Table
@@ -595,5 +592,13 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $('#reservationButton').click(function () {
+        $('#reservationModal').modal('show');
+      });
+      $('#loginButton').click(function () {
+        $('#loginModal').modal('show');
+      });
+    </script>
   </body>
 </html>
