@@ -85,9 +85,26 @@ body {
 
 #carouselButton {
   position: absolute;
-  right: 0px;
-  bottom: 0px;
-  z-index: 1;
+  right: calc(50% - 50px);
+  bottom: calc(50% - 50px);
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #00000016;
+  border-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 2rem;
+  &:hover {
+    background-color: #00000086;
+    border-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+  }
+
+  &:focus {
+    border-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+  }
 }
 
 .modal {

@@ -39,36 +39,58 @@ body {
 
 .carousel {
   background: #512da8; }
-  .carousel .carousel-item {
-    height: 300px; }
-    .carousel .carousel-item img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-height: 300px; }
-  .carousel .carousel-control-prev-icon,
-  .carousel .carousel-control-next-icon {
-    height: 45px;
-    width: 45px;
-    background-position: center;
-    background-size: 20px;
-    background-color: #00000086;
-    border-radius: 50%; }
-  .carousel .carousel-caption {
-    text-shadow: 2px 2px 10px #0f0f0f; }
+
+.carousel .carousel-item {
+  height: 300px; }
+
+.carousel .carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px; }
+
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+  height: 45px;
+  width: 45px;
+  background-position: center;
+  background-size: 20px;
+  background-color: #00000086;
+  border-radius: 50%; }
+
+.carousel .carousel-caption {
+  text-shadow: 2px 2px 10px #0f0f0f; }
 
 #carouselButton {
   position: absolute;
-  right: 0px;
-  bottom: 0px;
-  z-index: 1; }
+  right: calc(50% - 50px);
+  bottom: calc(50% - 50px);
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #00000016;
+  border-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 2rem; }
+
+#carouselButton:hover {
+  background-color: #00000086;
+  border-color: rgba(255, 255, 255, 0);
+  color: white; }
+
+#carouselButton:focus {
+  border-color: rgba(255, 255, 255, 0);
+  box-shadow: none; }
 
 .modal .modal-header {
   background-color: #512da8; }
-  .modal .modal-header .modal-title {
-    color: floralwhite; }
-  .modal .modal-header button {
-    color: floralwhite; }
+
+.modal .modal-header .modal-title {
+  color: floralwhite; }
+
+.modal .modal-header button {
+  color: floralwhite; }
 
 .modal .modal-body {
   background-color: #d1c4e9; }
